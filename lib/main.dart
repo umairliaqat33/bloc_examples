@@ -1,6 +1,6 @@
 import 'package:bloc_examples/blocs/counter_bloc/counter_bloc_bloc.dart';
 import 'package:bloc_examples/blocs/switch_bloc/switch_bloc.dart';
-import 'package:bloc_examples/screens/counter_screen.dart';
+import 'package:bloc_examples/screens/switch_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
         create: (_) => CounterBlocBloc(),
         child: BlocProvider(
           create: (context) => SwitchBloc(),
-          child: const CounterScreen(),
+          child: const SwitchScreen(),
         ),
       ),
     );
