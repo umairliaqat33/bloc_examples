@@ -1,4 +1,5 @@
 import 'package:bloc_examples/blocs/counter_bloc/counter_bloc_bloc.dart';
+import 'package:bloc_examples/blocs/list_bloc/list_bloc.dart';
 import 'package:bloc_examples/blocs/switch_bloc/switch_bloc.dart';
 import 'package:bloc_examples/screens/list_screen.dart';
 import 'package:flutter/material.dart';
@@ -26,6 +27,9 @@ class _MyAppState extends State<MyApp> {
           ),
           BlocProvider(
             create: (context) => SwitchBloc(),
+          ),
+          BlocProvider(
+            create: (context) => ListBloc(),
           ),
         ],
         child: ListScreen(),
